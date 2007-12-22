@@ -1,0 +1,5 @@
+databases.yml
+rsync_exclude.txt
+properties.ini
+config.php
+propel.ini
