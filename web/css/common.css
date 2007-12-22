@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    background-color: #F5F6F0;
+    line-height: 150%;
+    font-family: arial;
+    font-size: 0.75em;
+    color: #272D2F;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: normal;
+    color: #2E719E;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #84AC26;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #34424B;
+}
+
+a {
+    color: #2E719E;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.arrow {
+	padding-left: 10px;
+    background: url('/images/right-arrow.png') left center no-repeat;
+}
+
+p {
+    margin-top: 0;
+    text-align: justify;
+    line-height: 2em;
+}
+
+img {
+    border: none;
+}
+
+img.divider {
+    margin: 10px 0;
+    height: 2px;
+    width: 100%;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+#footer {
+    color: #94A5AF;
+}
+
+/************** LOGO *******************/
+
+#logo {
+	position: absolute;
+	top: 50px;
+}
+
+/************** PROPERTIES STYLES ******************/
+.prop {
+    margin: 0;
+}
+
+.prop dt {
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    color: #2B3941;
+}
+
+.prop dd {
+    margin: 0;
+}
+
+/*************** NEWS STYLES *****************/
+
+#content #news div {
+    clear: right;
+    margin-bottom: 10px;
+}
+
+#content #news div span.date {
+    background-color: red;
+}
+
+/************** SIDEBAR NEWS STYLES **********************/
+
+#sidebar #news h3 {
+    border-bottom: 2px dotted #CBCEC3;
+    padding-bottom: 0.5em; 
+}
+
+#sidebar #news .date {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #696B64;
+}
+
+#sidebar #news p {
+    margin: 0;
+}
+
+/************ ALL PROJECT ANNOUNCEMENTS STYLES ****************/
+
+#announcements div {
+    margin-bottom: 10px;
+}
+
+#announcements div p {
+    margin: 0;
+}
+
+#announcements div span.date {
+    clear: right;
+}
+
+#announcements div span.date {
+    font-size: 0.80em;
+    font-weight: bold;
+    color: #5F605B;
+}
+
+/* PROJECTS */
+
+#projects div {
+    margin-bottom: 1.5em;
+}
+
+#projects div h2 {
+    margin-bottom: 0.5em;
+}
+
+#projects div p {
+    margin: 0;
+}
+
+/************* BREADCRUMB STYLES ****************/
+
+#breadcrumb {
+	position: absolute;
+	top: 145px;
+	margin: 0;
+	padding: 0;
+}
+
+#breadcrumb li {
+	display: inline;
+	padding-left: 10px;
+	background: url("/images/breadcrumb.png") no-repeat left 50%;
+}
+
+#breadcrumb li.first {
+	padding-left: 0;
+	background: none;
+}
+
+#breadcrumb a {
+	text-decoration: none;
+}
+
+#breadcrumb li.current {
+    font-weight: bold;
+}
+
+/************* BOX STYLES *****************/
+.box {
+    background: url("/images/box/top.png") no-repeat;
+    padding-top: 10px;
+}
+.box .bottom {
+    background: url("/images/box/bottom.png") no-repeat bottom;
+    padding-bottom: 10px;
+}
+.box .content {
+    background: url("/images/box/middle.png") repeat-y;
+    padding: 0 10px;
+}
+
+/****************** MENU LIST ********************/
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/************* DEVELOPER LIST STYLES *****************/
+
+#developers div {
+    clear: left;
+    margin-bottom: 10px;
+    height: 83px;
+}
+
+#developers div img {
+    float: left;
+    margin-right: 10px;
+    border: 4px solid #CED1C5;
+}
+
+#developers div dl {
+    margin: 0;
+}
+
+#developers div dl dt {
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    color: #2B3941;
+}

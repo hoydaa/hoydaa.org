@@ -1,0 +1,34 @@
+#header {
+    height: 175px;
+    background: url("/images/header.png") repeat-x;
+}
+
+#main {
+    float: left;
+    width: 900px;
+    background: url("/images/main.png") repeat-y 700px 0;
+}
+
+#content {
+	float: left;
+	margin-right: 200px;
+	padding-top: 10px;
+}
+
+#sidebar {
+    float: right;
+    width: 200px;
+    margin-left: -200px;
+}
+
+#footer {
+	clear: both;
+    background-color: #34424B;
+    border-top: 4px solid #CCD0C1;
+}
+
+.column {
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+}

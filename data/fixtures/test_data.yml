@@ -1,0 +1,142 @@
+User:
+  utku:
+    username:   utku
+    first_name: Utku
+    last_name:  Utkan
+    password:   pass-word
+    email:      utku.utkan@gmail.com
+    photo:      utku
+  umut:
+    username:   umut
+    first_name: Umut
+    last_name:  Utkan
+    password:   pass-word
+    email:      umut.utkan@gmail.com
+
+Developer:
+  utku:
+    id: utku
+    organization_name: Hoydaa Inc.
+    organization_url: http://www.hoydaa.com
+  umut:
+    id: umut
+    organization_name: Hoydaa Inc.
+    organization_url: http://www.hoydaa.com
+
+License:
+  apache:
+    name: Apache License, Version 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  epl:
+    name: Eclipse Public Lincese - v 1.0
+    url: http://www.eclipse.org/legal/epl-v10.html
+
+Project:
+  codesnippet:
+    id: codesnippet
+    name: CodeSnippet
+    summary: >
+      CodeSnippet is a collection of Java libraries to convert CSS, DTD, HTML,
+      Java, JavaScript, JSP, Properties, SQL, and XML code to HTML with syntax
+      highlighting and line number support.
+    description: >
+      CodeSnippet is a collection of Java libraries to convert various types of
+      source code such as CSS, DTD, HTML, Java, JavaScript, JSP, and XML to HTML
+      with syntax highlighting and line number support. CodeSnippet can be used
+      by applications that need to display source code as HTML with syntax
+      highlighting. For example, desktop search applications, developer forums,
+      and code browsers can use it. CodeSnippet also forms the basis of
+      CodeSnippet4Eclipse, CodeSnippet4IDEA, and CodeSnippet4NetBeans plugins
+      which are also developed by our organization.
+      
+      Although there are many similar projects developed with the PHP, .NET, and
+      JavaScript technology, there are just a few for Java. Moreover, the ones
+      that are available are not flexible enough to generate the output HTML
+      with different colors and text styles. CodeSnippet is a strong candidate
+      to fill this gap. CodeSnippet is managed with Maven ( a project management
+      framework from ASF ) and it consist of multiple modules where there is a
+      module for each type of source code. Thanks to this, applications can use
+      the modules they need, rather than adding all to their classpath which
+      consequently increase the footprint. This modular architecture moves
+      CodeSnippet one step ahead of its rivals.
+      
+      Converting a source code to HTML requires that type source code to be
+      parsed. However, writing a parser for a programming language is a hard and
+      time-consuming job. Instead of writing a parser from scratch, we use
+      JavaCC ( a parser generator from Sun ) to automatically generate the
+      parsers using language grammars which are already available in the
+      community. This implementation choice will greatly shorten the development
+      time.
+    license_id: apache
+    issue_tracker: https://sourceforge.net/tracker/?group_id=206478
+    forums: https://sourceforge.net/forum/?group_id=206478
+  cs4eclipse:
+    id: cs4eclipse
+    name: CodeSnippet for Eclipse
+    summary: >
+      CodeSnippet is a set of Eclipse plug-ins to convert Ant, Java, Properties,
+      CSS, DTD, HTML, and XML source code (complete files or snippets) to HTML
+      with syntax highlighting.
+    description: >
+      Syntax highlighting is a feature of IDEs (Integrated Development
+      Environments) that display source code in different colors and text styles
+      according to the category of terms which include keywords, comments,
+      control-flow statements, variables, and other elements. This feature
+      improves the readability and context of the source code, and makes the
+      developers' life a lot easier. However, when some part of source code is
+      posted in a forum or to a blog, the syntax highlighting disappears and it
+      becomes a plain text which makes it very hard to distinguish different
+      types of language elements. Although some web sites like Sun's Developer
+      Forums provides syntax highlighting support, there seems to be a need for
+      a general solution at the client side.
+      
+      CodeSnippet is an Eclipse plug-in that solves this problem. It can convert
+      Ant, Java, Properties, CSS, DTD, HTML, JavaScript, JSP, and XML source
+      code to HTML with syntax highlighting and line number support. Unlike
+      existing solutions, CodeSnippet supports numerous file formats, and it
+      does not require any custom configuration related with the color and text
+      style information. It obtains this information directly from the related
+      Eclipse editor. When CodeSnippet plug-in is installed, a new menu item
+      (Export > HTML) appears in the popup menus of the supported editors. Users
+      can generate the HTML by selecting some portion of the source code or the
+      complete file from the Navigation View, and then selecting "Export >
+      HTML". According to the preference generated HTML can be written to a file
+      or copied to the system clipboard.
+    license_id: epl
+    issue_tracker: http://sourceforge.net/tracker/?group_id=203392
+    forums: http://sourceforge.net/forum/?group_id=203392
+    download: http://sourceforge.net/project/showfiles.php?group_id=203392
+
+ProjectDeveloper:
+  codesnippet_umut:
+    project_id: codesnippet
+    developer_id: umut
+  codesnippet_utku:
+    project_id: codesnippet
+    developer_id: utku
+  cs4eclipse_utku:
+    project_id: cs4eclipse
+    developer_id: utku
+
+ProjectAnnouncement:
+  cs4eclipse_announcement:
+    project_id: cs4eclipse
+    subject: CodeSnippet for Eclipse version 1.0.0 (stable) released
+    details: >
+      CodeSnippet plug-ins for Eclipse are released. CodeSnippet plug-ins can
+      convert various types of source code (complete files or snippets) to HTML
+      with syntax highlighting. CodeSnippet will colorize your blogs with
+      highlighted code samples. Give it a try; you won't regret it! 
+      
+      Unlike existing solutions, CodeSnippet supports several file formats (
+      Ant, CSS, DTD, HTML, Java, Properties, and XML ) and it does not require
+      any custom configuration related with the color and text style information.
+      Instead, this information is directly obtained from the related editor.
+      You can install CodeSnippet plug-ins via update site whose URL is given
+      below. CodeSnippet is also listed at EclipsePlugins and Eclipse Plugin
+      Central. Please, take sometime and rate our plug-in using the related
+      links below. 
+      
+      Update Site: http://cs4eclipse.sourceforge.net/update-site 
+      EclipsePlugins: http://eclipse-plugins.info/eclipse/user/rateit_controller.jsp?plugin_id=1788 
+      Eclipse Plugin Central : http://www.eclipseplugincentral.com/Web_Links-index-req-ratelink-lid-1005-ttitle-CodeSnippet.html

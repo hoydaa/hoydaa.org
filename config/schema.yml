@@ -1,0 +1,49 @@
+propel:
+  hoydaa_user:
+    _attributes: { phpName: User }
+    id: { type: integer, required: true, primaryKey: true, autoincrement: true }
+    username: { type: varchar(50), required: true, index: unique }
+    sha1_password: { type: char, size: 40, required: true }
+    salt: { type: char, size: 40, required: true }
+    email: { type: varchar(100), required: true, index: unique }
+    first_name: varchar(100)
+    last_name: varchar(100)
+    photo: { type: char, size: 36 }
+    created_at: ~
+
+  hoydaa_developer:
+    _attributes: { phpName: Developer }
+    id: { type: integer, required: true, primaryKey: true, foreignTable: hoydaa_user, foreignReference: id }
+    organization_name: { type: varchar, size: 255 }
+    organization_url: { type: varchar, size: 255 }
+
+  hoydaa_license:
+    _attributes: { phpName: License }
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name: { type: varchar, size: 255, required: true }
+    url: { type: varchar, size: 255, required: true }
+
+  hoydaa_project:
+    _attributes: { phpName: Project }
+    id: { type: varchar, size: 15, required: true, primaryKey: true }
+    name: { type: varchar, size: 40, required: true }
+    summary: { type: varchar, size: 255, required: true }
+    description: { type: longvarchar, required: true }
+    license_id: { type: integer, foreignTable: hoydaa_license, foreignReference: id }
+    wiki: { type: varchar, size: 255 }
+    issue_tracker: { type: varchar, size: 255 }
+    forums: { type: varchar, size: 255 }
+    download: { type: varchar, size: 255 }
+
+  hoydaa_project_developer:
+    _attributes: { phpName: ProjectDeveloper }
+    project_id: { type: varchar, size: 15, required: true, primaryKey: true, foreignTable: hoydaa_project, foreignReference: id }
+    developer_id: { type: integer, required: true, primaryKey: true, foreignTable: hoydaa_developer, foreignReference: id }
+
+  hoydaa_project_announcement:
+    _attributes: { phpName: ProjectAnnouncement }
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    project_id: { type: varchar, size: 15, required: true, foreignTable: hoydaa_project, foreignReference: id }
+    subject: { type: varchar, size: 250, required: true }
+    details: { type: longvarchar, required: true }
+    created_at:

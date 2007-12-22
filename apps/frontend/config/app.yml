@@ -1,0 +1,4 @@
+# default values
+all:
+  pager:
+    max: 1

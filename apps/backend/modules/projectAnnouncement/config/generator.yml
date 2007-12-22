@@ -1,0 +1,12 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      ProjectAnnouncement
+    theme:            default
+
+    list:
+      display:        [project, =subject, created_at]
+
+    edit:
+      fields:
+        created_at:   { type: plain }

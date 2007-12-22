@@ -1,0 +1,19 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        symfony project
+    robots:       index, follow
+    description:  symfony project
+    keywords:     symfony, project
+    language:     en
+
+  stylesheets:    [layout, common, tab]
+
+  javascripts:    [jquery, main]
+
+  has_layout:     on
+  layout:         layout
+
+  components:

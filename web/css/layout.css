@@ -1,0 +1,39 @@
+#header-wrapper {
+    height: 175px;
+    background: url("/images/header.png") repeat-x;
+}
+
+#header {
+    margin: 0 auto;
+    width: 830px;
+    position: relative;
+}
+
+#main {
+    margin: 0 auto;
+    width: 830px;
+    background: url("/images/main.png") repeat-y 600px;
+}
+
+#content {
+    margin-right: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sidebar {
+    float: right;
+    width: 220px;
+    padding-top: 10px;
+}
+
+#bottom {
+    clear: right;
+}
+
+#footer {
+    background-color: #34424B;
+    border-top: 4px solid #CCD0C1;
+    padding: 10px;
+    text-align: center;
+}
