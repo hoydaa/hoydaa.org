@@ -6,13 +6,13 @@ announcements:
   url:   /announcements
   param: { module: projectAnnouncement, action: list }
 
-projects:
-  url:   /projects
-  param: { module: project, action: list }
-
 project:
   url:   /projects/:id
   param: { module: project, action: show }
+
+projects:
+  url:   /projects
+  param: { module: project, action: list }
 
 # default rules
 homepage:
