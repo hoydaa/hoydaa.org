@@ -1,0 +1,24 @@
+methods:
+  post: [username, password]
+
+names:
+  username:
+    required:     true
+    required_msg: Please type your username.
+    validators:   [userValidator]
+
+  password:
+    required:     true
+    required_msg: Please type your password.
+
+usernameValidator:
+    class:        sfStringValidator
+    param:
+      min:        5
+      min_error:  Username cannot be less than 5 characters.
+      
+userValidator:
+    class:       myLoginValidator
+    param:
+      password:    password
+      login_error: Username or password you entered is wrong.
