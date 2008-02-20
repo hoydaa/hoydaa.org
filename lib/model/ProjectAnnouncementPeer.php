@@ -8,7 +8,7 @@ class ProjectAnnouncementPeer extends BaseProjectAnnouncementPeer
         $c->addDescendingOrderByColumn(self::CREATED_AT);
         if ($project_id)
         {
-            $c->add(ProjectAnnouncementPeer::PROJECT_ID, $project_id);
+            $c->add(ProjectAnnouncementPeer::PROJECT_ID, ProjectPeer::retrieveByTag($project_id)->getId());
         }
         $c->setLimit($max);
 
@@ -22,7 +22,7 @@ class ProjectAnnouncementPeer extends BaseProjectAnnouncementPeer
 
         if ($project_id)
         {
-            $c->add(ProjectAnnouncementPeer::PROJECT_ID, $project_id);
+            $c->add(ProjectAnnouncementPeer::PROJECT_ID, ProjectPeer::retrieveByTag($project_id)->getId());
         }
 
         $pager = new sfPropelPager('ProjectAnnouncement', sfConfig::get('app_pager_max'));

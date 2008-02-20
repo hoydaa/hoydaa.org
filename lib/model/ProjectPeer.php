@@ -9,4 +9,9 @@
  */ 
 class ProjectPeer extends BaseProjectPeer
 {
+    public static function retrieveByTag($tag) {
+        $c = new Criteria();
+        $c->add(ProjectPeer::TAG, $tag);
+        return ProjectPeer::doSelectOne($c);
+    }
 }
