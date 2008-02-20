@@ -9,11 +9,6 @@ class User extends BaseUser
         $this->setSha1Password(sha1($salt.$password));
     }
 
-    public function getPassword()
-    {
-        return '';
-    }
-
     public function __toString()
     {
         return $this->getUsername();

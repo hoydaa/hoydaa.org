@@ -176,6 +176,23 @@ img.divider {
     font-weight: bold;
 }
 
+/************* LOGIN STYLES *****************/
+#login {
+	top: 145px;
+	right: 10px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#login a {
+	text-decoration: none;
+}
+#login a:hover {
+	text-decoration: line-through;	
+}
+
 /************* BOX STYLES *****************/
 .box {
     background: url("/images/box/top.png") no-repeat;
@@ -221,4 +238,23 @@ ul.menu {
     width: 100px;
     font-weight: bold;
     color: #2B3941;
+}
+
+
+/*********** FORM STYLES *******************/
+.form-container {
+	border: 1px solid #CCCCCC;
+	padding: 5px 5px 5px 5px;
+}
+.form-row-container {
+	margin-top: 10px;	
+}
+.form-row-container label {
+	width: 100px;
+	text-align: right;
+	position: absolute;
+}
+.input-container, .form_error {
+	padding-left: 110px;
+	text-align: left;
 }
