@@ -9,9 +9,9 @@ generator:
       description:    { params: size=100x20 }
 
     list:
-      display:        [=name, license]
+      display:        [=tag, name, license]
 
     edit:
       fields:
         project_developer: { type: admin_double_list, params: through_class=ProjectDeveloper }
-      display:        [name, summary, description, license_id, wiki, issue_tracker, forums, download, project_developer]
+      display:        [tag, name, summary, description, license_id, wiki, issue_tracker, forums, download, project_developer]
