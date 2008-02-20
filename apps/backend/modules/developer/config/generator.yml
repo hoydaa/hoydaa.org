@@ -8,4 +8,4 @@ generator:
       display:        [=user, organization_name, organization_url]
 
     edit:
-      display:        [_user, organization_name, organization_url]
+      display:        [user_id, organization_name, organization_url]

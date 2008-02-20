@@ -1,1 +1,0 @@
-<?php echo object_select_tag($developer, 'getId', 'related_class=User') ?>
