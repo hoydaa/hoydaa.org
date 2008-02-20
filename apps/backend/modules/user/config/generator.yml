@@ -5,7 +5,7 @@ generator:
     theme:            default
 
     list:
-      display:        [_photo, =username, email, first_name, last_name, created_at]
+      display:        [_photo, =username, email, first_name, last_name, roles, created_at]
 
     edit:
       fields:
@@ -14,4 +14,4 @@ generator:
           upload_dir: pictures/users
           params:     include_link=pictures/users include_remove=true
         created_at:   { type: plain }
-      display:        [username, email, first_name, last_name, photo, created_at]
+      display:        [username, email, _password, roles, first_name, last_name, photo, created_at]
