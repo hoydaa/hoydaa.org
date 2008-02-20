@@ -18,6 +18,8 @@
         <dl>
             <dt>Organization:</dt>
             <dd><?php echo link_to($developer->getOrganizationName(), $developer->getOrganizationUrl(), 'target=_blank') ?></dd>
+            <dt>Email:</dt>
+            <dd><?php echo mail_to($developer->getUser()->getEmail(), $developer->getUser()->getEmail()) ?></dd>
         </dl>
     </div>
     <?php endforeach; ?>
