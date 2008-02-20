@@ -20,7 +20,7 @@ class projectActions extends sfActions
     public function executeShow()
     {
         $this->tab = 'projects';
-        $this->project = ProjectPeer::retrieveByPK($this->getRequestParameter('id'));
+        $this->project = ProjectPeer::retrieveByTag($this->getRequestParameter('id'));
         $this->pages = array (
     	    array ('label' => 'Home', 'url' => '@homepage'),
     	    array ('label' => 'Projects', 'url' => 'project/list'),
@@ -32,13 +32,13 @@ class projectActions extends sfActions
 
     public function executeListAnnouncements()
     {
-        $this->project = ProjectPeer::retrieveByPK($this->getRequestParameter('id'));
+        $this->project = ProjectPeer::retrieveByTag($this->getRequestParameter('id'));
         $this->projectAnnouncementPager = ProjectAnnouncementPeer::getPager($this->getRequestParameter('page', 1), $this->getRequestParameter('id'));
         $this->tab = 'projects';
         $this->pages = array (
     	    array ('label' => 'Home', 'url' => '@homepage'),
     	    array ('label' => 'Projects', 'url' => 'project/list'),
-    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getId()),
+    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getTag()),
     	    array ('label' => 'Announcements')
     	);
     }
@@ -51,7 +51,7 @@ class projectActions extends sfActions
         $this->pages = array (
     	    array ('label' => 'Home', 'url' => '@homepage'),
     	    array ('label' => 'Projects', 'url' => 'project/list'),
-    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getId()),
+    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getTag()),
     	    array ('label' => 'Announcements')
     	);
     }
@@ -59,11 +59,11 @@ class projectActions extends sfActions
     public function executeListDevelopers()
     {
         $this->tab = 'projects';
-        $this->project = ProjectPeer::retrieveByPK($this->getRequestParameter('id'));
+        $this->project = ProjectPeer::retrieveByTag($this->getRequestParameter('id'));
         $this->pages = array (
     	    array ('label' => 'Home', 'url' => '@homepage'),
     	    array ('label' => 'Projects', 'url' => 'project/list'),
-    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getId()),
+    	    array ('label' => $this->project->getName(), 'url' => 'project/show?id='.$this->project->getTag()),
     	    array ('label' => 'Project Team')
     	);
         $this->developers = $this->project->getDevelopers();

@@ -35,7 +35,7 @@
         <span class="date">Posted on <?php echo $announcement->getCreatedAt() ?></span>
     </div>
     <?php endforeach; ?>
-    <?php echo link_to('All Announcements', 'project/listAnnouncements?id='.$project->getId(), 'class=arrow') ?>
+    <?php echo link_to('All Announcements', 'project/listAnnouncements?id='.$project->getTag(), 'class=arrow') ?>
 </div>
 <?php else: ?>
 <p>There are no announcements for this project at the moment.</p>

@@ -7,7 +7,7 @@
             <ul class="menu">
             	<li><h2>Projects</h2></li>
             	<?php foreach ($projects as $project): ?>
-            	<li><?php echo link_to($project->getName(), 'project/show?id='.$project->getId()) ?></li>
+            	<li><?php echo link_to($project->getName(), 'project/show?id='.$project->getTag()) ?></li>
                 <?php endforeach; ?>
             </ul>
         </div>

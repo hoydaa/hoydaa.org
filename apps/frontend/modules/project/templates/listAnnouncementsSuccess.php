@@ -21,5 +21,5 @@
 <?php endif; ?>
 
 <div id="pager">
-    <?php echo pager_navigation($projectAnnouncementPager, 'project/listAnnouncements?id='.$project->getId()) ?>
+    <?php echo pager_navigation($projectAnnouncementPager, 'project/listAnnouncements?id='.$project->getTag()) ?>
 </div>
