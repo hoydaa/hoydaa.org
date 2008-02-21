@@ -30,7 +30,7 @@
 			<div class="input-container"><?php echo input_password_tag('password') ?></div>
 		</div>
  		<div class="form-row-container">
-			<div class="input-container"><?php echo submit_tag('giriş') ?></div>
+			<div class="input-container"><?php echo submit_tag('login') ?></div>
 		</div>    
 	</div>
 	
