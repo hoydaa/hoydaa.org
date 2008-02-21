@@ -15,7 +15,7 @@ propel:
   hoydaa_developer:
     _attributes: { phpName: Developer }
     id: { type: integer, required: true, primatyKey: true }
-    user_id: { type: integer, required: true, foreignTable: hoydaa_user, foreignReference: id }
+    user_id: { type: integer, required: true, foreignTable: hoydaa_user, foreignReference: id, index: unique }
     organization_name: { type: varchar, size: 255 }
     organization_url: { type: varchar, size: 255 }
 
