@@ -1,9 +1,8 @@
 body {
     margin: 0;
     background-color: #F5F6F0;
-    line-height: 150%;
-    font-family: arial;
-    font-size: 0.75em;
+    font-family: Verdana;
+    font-size: 0.7em;
     color: #272D2F;
 }
 
@@ -41,8 +40,7 @@ a.arrow {
 
 p {
     margin-top: 0;
-    text-align: justify;
-    line-height: 2em;
+    line-height: 165%;
 }
 
 img {
@@ -52,7 +50,7 @@ img {
 img.divider {
     margin: 10px 0;
     height: 2px;
-    width: 100%;
+    width: 587px;
 }
 
 .right-aligned {
