@@ -1,0 +1,11 @@
+methods:
+  post: [first_name, last_name]
+
+names:
+  first_name:
+    required:     true
+    required_msg: Please type your fisrt name.
+
+  last_name:
+    required:     true
+    required_msg: Please type your last name.

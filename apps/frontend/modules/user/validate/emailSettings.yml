@@ -1,0 +1,14 @@
+methods:
+  post: [redirect_email]
+
+names:
+  redirect_email:
+    required:     true
+    required_msg: Please type your the email address.
+    validators: [emailValidator]
+
+emailValidator:
+    class:        sfEmailValidator
+    param:
+      email:       email
+      email_error: Uygunsuz e-posta adresi.
