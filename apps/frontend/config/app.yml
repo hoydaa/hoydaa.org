@@ -3,5 +3,5 @@ all:
   pager:
     max: 1
   isicsSitemapXML:
-    modules:       [project]
+    modules:       [project, site]
   
