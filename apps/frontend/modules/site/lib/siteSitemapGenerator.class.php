@@ -1,5 +1,5 @@
 <?php
-class homeSitemapGenerator implements sitemapGenerator
+class siteSitemapGenerator implements sitemapGenerator
 {
     public static function generate() {
     	$urls = array();
