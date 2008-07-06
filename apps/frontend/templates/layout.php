@@ -35,7 +35,7 @@
             <div id="bottom"></div>
         </div>
         <div id="footer">
-            Copyright &copy; 2007 Hoydaa Inc.
+            Copyright &copy; 2007-<?=date('Y') ?> Hoydaa Inc.
         </div>
         
 		<script type="text/javascript">
