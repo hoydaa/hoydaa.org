@@ -28,6 +28,7 @@
         <div id="main">
             <div id="sidebar">
                 <?php include_slot('sidebar') ?>
+                <?php include_partial('site/jira_banner') ?>
             </div>
             <div id="content">
                 <?php echo $sf_data->getRaw('sf_content') ?>
@@ -35,7 +36,7 @@
             <div id="bottom"></div>
         </div>
         <div id="footer">
-            Copyright &copy; 2007-<?=date('Y') ?> Hoydaa Inc.
+            Copyright &copy; 2007-<?php echo date('Y') ?> Hoydaa Inc.
         </div>
         
 		<script type="text/javascript">

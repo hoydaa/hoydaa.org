@@ -13,6 +13,7 @@
         </div>
     </div>
 </div>
+<br />
 <?php end_slot() ?>
 
 <?php echo form_tag('user/login') ?>

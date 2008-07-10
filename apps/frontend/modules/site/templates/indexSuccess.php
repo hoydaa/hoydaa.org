@@ -13,6 +13,7 @@
         </div>
     </div>
 </div>
+<br />
 <?php end_slot() ?>
 
 <?php echo image_tag('banner') ?>
