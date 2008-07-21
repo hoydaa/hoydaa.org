@@ -11,7 +11,7 @@
 <?php endif ?>
 <?php if ($url->getPriority()): ?>
     <priority><?php echo $url->getPriority() ?></priority>
-<?php endif ?>
+<?php endif ?> 
   </url>
 <?php endforeach ?>
 </urlset>
