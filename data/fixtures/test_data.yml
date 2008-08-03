@@ -1,13 +1,13 @@
 User:
   utku:
-    username:   utku
+    username:   utku.utkan
     first_name: Utku
     last_name:  Utkan
     password:   pass-word
     email:      utku.utkan@gmail.com
     photo:      utku
   umut:
-    username:   umut
+    username:   umut.utkan
     first_name: Umut
     last_name:  Utkan
     password:   pass-word
@@ -15,11 +15,11 @@ User:
 
 Developer:
   utku:
-    id: utku
+    user_id: utku
     organization_name: Hoydaa Inc.
     organization_url: http://www.hoydaa.com
   umut:
-    id: umut
+    user_id: umut
     organization_name: Hoydaa Inc.
     organization_url: http://www.hoydaa.com
 
@@ -33,7 +33,7 @@ License:
 
 Project:
   codesnippet:
-    id: codesnippet
+    tag: codesnippet
     name: CodeSnippet
     summary: >
       CodeSnippet is a collection of Java libraries to convert CSS, DTD, HTML,
@@ -71,7 +71,7 @@ Project:
     issue_tracker: https://sourceforge.net/tracker/?group_id=206478
     forums: https://sourceforge.net/forum/?group_id=206478
   cs4eclipse:
-    id: cs4eclipse
+    tag: cs4eclipse
     name: CodeSnippet for Eclipse
     summary: >
       CodeSnippet is a set of Eclipse plug-ins to convert Ant, Java, Properties,
