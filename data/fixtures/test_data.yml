@@ -6,12 +6,35 @@ User:
     password:   pass-word
     email:      utku.utkan@gmail.com
     photo:      utku
+    roles:      admin
   umut:
     username:   umut.utkan
     first_name: Umut
     last_name:  Utkan
     password:   pass-word
     email:      umut.utkan@gmail.com
+    roles:      admin
+    
+Website:
+  snippets:
+    name: Hoydaa Snippets
+    summary: Hoydaa Snippets is a community website to share your code snippets.
+    description: >
+      Hoydaa Snippets is a community website to share your code snippets.<br/>
+      <ul>
+        <li>Syntax highlighting</li>
+        <li>Tagging for easy categorization</li>
+        <li>Powerfull search engine based on Lucene</li>
+        <li>Posts in Markdown format</li>
+      </ul>
+    url: http://snippets.hoydaa.org
+  googlevolume:
+    name: Google Volume
+    summary: Hoydaa Snippets lets you track google search result sizes of your custom queries.
+    description: >
+      Track your query results with Google Volume. Create a report of your queries and let 
+      us track them daily. And whenever you want, come back and see the changes on charts.
+    url: http://www.googlevolume.com
 
 Developer:
   utku:
