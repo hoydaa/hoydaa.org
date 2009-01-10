@@ -50,3 +50,11 @@ propel:
     subject: { type: varchar, size: 250, required: true }
     details: { type: longvarchar, required: true }
     created_at:
+    
+  hoydaa_website:
+    _attributes: { phpName: Website }
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name: { type: varchar, size: 40, required: true }
+    summary: { type: varchar, size: 255, required: true }
+    description: { type: longvarchar, required: true }
+    url: { type: varchar, size: 255, required: true }
