@@ -1,0 +1,15 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Website
+    theme:            default
+
+    fields:
+      summary:        { type: textarea_tag, params: size=100x5 }
+      description:    { params: size=100x20 }
+
+    list:
+      display:        [=name, url, summary]
+
+    edit:
+      display:        [name, summary, description, url]
