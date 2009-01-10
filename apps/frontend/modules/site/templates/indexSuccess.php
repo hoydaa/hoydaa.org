@@ -14,6 +14,8 @@
     </div>
 </div>
 <br />
+<?php include_component('website', 'websites') ?>
+<br />
 <?php end_slot() ?>
 
 <?php echo image_tag('banner') ?>
