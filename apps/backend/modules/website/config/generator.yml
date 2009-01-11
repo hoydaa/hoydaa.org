@@ -12,4 +12,4 @@ generator:
       display:        [=name, url, summary]
 
     edit:
-      display:        [name, summary, description, url]
+      display:        [name, slogan, summary, description, url]

@@ -30,6 +30,7 @@ Website:
     url: http://snippets.hoydaa.org
   googlevolume:
     name: Google Volume
+    slogan: Measure your queries' google performance.
     summary: Google Volume lets you track google search result sizes of your custom queries.
     description: >
       Track your query results with Google Volume. Create a report of your queries and let 
